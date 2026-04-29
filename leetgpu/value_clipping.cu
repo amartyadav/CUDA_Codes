@@ -30,7 +30,9 @@ __global__ void clip_kernel(const float *input, float *output, float lo, float h
 
     if(idx < N)
     {
-        output[idx] = (input[idx] < lo || input[idx] > hi) ? (abs((input[idx] - lo)) < abs((input[idx] - hi))) ? lo : hi : input[idx];
+        // output[idx] = (input[idx] < lo || input[idx] > hi) ? (abs((input[idx] - lo)) < abs((input[idx] - hi))) ? lo : hi : input[idx];
+        float x = input[idx];
+        output[idx] = fmaxf(lo, fminf(hi, x));
     }
 }
 
