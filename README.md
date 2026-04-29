@@ -23,6 +23,7 @@ nvcc filename.cu -o output
 
 ## Goals
 
+* Practice implementing a host of kernels from LeetGPU problem database.
 * Understand CUDA memory hierarchy (Global, Shared, Constant).
 * Master thread synchronization and warp shuffles.
 * Optimize kernels for maximum throughput.
