@@ -1,7 +1,7 @@
 #### Disclaimer
 
 This readme has been written completely using AI. 
-Everything else in this repo has been generated without any AI at all. AI is an assistant. Use it so.
+Everything else in this repo has been generated without any AI at all.
 
 ## CUDA Learning Sandbox
 
